@@ -14,7 +14,7 @@ Source code:
 
 Model Loader parameters:
 * `device` - `torch.device` for the model
-* `model_weights_path` - Path to the checkpointed base model weights
+* `model_weights_path` - Path to the pretrained base model weights
 * `subject_list` - List of preprocessed volumes to feed into the model 
 * `lr` - learning rate
 * `steps` - Number of backwards passes of TENT/EntropyKL/LayerInspect before making a final prediction
