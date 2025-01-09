@@ -3,6 +3,7 @@ Linde Hesse
 30-10-2023
 
 For details on the model see full paper at: https://pubmed.ncbi.nlm.nih.gov/35331871/ (Subcortical segmentation of the fetal brain in 3D ultrasound using deep learning)
+Copied from https://github.com/lindehesse/FetalSubcortSegm_Code
 
 """
 import torch
