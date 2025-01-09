@@ -115,6 +115,7 @@ def configure_filter_inspect(model, filter_inspector, transform, subject_list, s
     save_activations = filter_inspect_config.get('save_activations', False)
     use_KL = filter_inspect_config.get('use_KL', False)
     filter_diff_activations_path = filter_inspect_config.get('filter_diff_activations_path', None)
+    atlas_labels_path = filter_inspect_config['atlas_labels_path']
     if use_KL:
         lambd = filter_inspect_config.get('lambda', 1.0)
     
@@ -158,7 +159,7 @@ def configure_filter_inspect(model, filter_inspector, transform, subject_list, s
 
     # We reset model between runs, but updates persist over batches
     if use_KL:
-        net = entropy_KL.EntropyKL(model, optimizer, steps=steps, lambd=lambd, week_num=week_num).to(device)
+        net = entropy_KL.EntropyKL(model, optimizer, atlas_labels_path, steps=steps, lambd=lambd, week_num=week_num).to(device)
     else:
         net = tent.Tent(model, optimizer, steps=steps).to(device)
     
