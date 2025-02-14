@@ -36,3 +36,17 @@ surface_distance:
 # git clone https://github.com/lindehesse/surface-distance.git
 # pip install surface-distance/
 ```
+
+## Citation
+
+```
+@misc{omolegan2025exploringtesttimeadaptation,
+      title={Exploring Test Time Adaptation for Subcortical Segmentation of the Fetal Brain in 3D Ultrasound}, 
+      author={Joshua Omolegan and Pak Hei Yeung and Madeleine K. Wyburd and Linde Hesse and Monique Haak and Intergrowth-21st Consortium and Ana I. L. Namburete and Nicola K. Dinsdale},
+      year={2025},
+      eprint={2502.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.08774}, 
+}
+```
